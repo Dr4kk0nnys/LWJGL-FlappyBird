@@ -1,3 +1,19 @@
+/* TODO ->
+* Make the code prettier
+* Make the code smarter ( add an interface instead of the -> private int width = 1280 ...
+* 														  -> private int height = 720 ...
+* 														  -> private String tile = "Flappy Bird";
+* Rename some stupid named variables ( like Thread thread -> it should be Thread gameThread;
+* Maybe on the start() method we could make running = true only if the user press space
+* Add stuff to the dictionary ( like Flappy )
+* Check it out if it runs on windows, android ( it would be cool AS FUCK )
+* Make the FPS thing smarter jeez
+* Watch the tutorial and make it from scratch
+* Try to get what in the fuck is happening ( absolutely everything btw )
+* Make the .jar file
+* */
+
+
 package com.thecherno.flappy;
 
 import static org.lwjgl.glfw.GLFW.*;
