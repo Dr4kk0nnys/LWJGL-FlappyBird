@@ -2,6 +2,9 @@
   <dictionary name="dr4kk0nnys">
     <words>
       <w>flappy</w>
+      <w>glfw</w>
+      <w>shaders</w>
+      <w>vert</w>
     </words>
   </dictionary>
 </component>

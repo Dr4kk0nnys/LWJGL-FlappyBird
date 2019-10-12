@@ -2,8 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e74e03ac-edc5-4a13-b040-5231b21d7229" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Dimensions/Dimensions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Graphics/Shader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Graphics/Texture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Graphics/VertexArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Input/Input.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Level/Level.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Maths/Matrix4f.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Maths/Vector3f.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Utils/BufferUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Utils/FileUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Utils/ShaderUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/dr4kk0nnys.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/dr4kk0nnys.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/thecherno/flappy/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/thecherno/flappy/Main.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,27 +24,39 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1S3ViNreSoaYBEnmsdCKUZI9WNn" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/slick" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/com/thecherno/flappy/textures" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.dr4kk0nnys.Flappy_Bird.utils" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/libs" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/com/thecherno/flappy/textures" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -46,7 +71,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dr4kk0nnys.Flappy_Bird.Main" />
+      <module name="Flappy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dr4kk0nnys.Flappy_Bird.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.thecherno.flappy.Main" />
       <module name="Flappy" />
@@ -62,6 +100,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
