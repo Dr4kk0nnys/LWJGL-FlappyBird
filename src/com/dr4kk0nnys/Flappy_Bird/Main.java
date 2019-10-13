@@ -43,7 +43,7 @@ public class Main implements Runnable, Dimensions {
         glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
         glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-        this.window = glfwCreateWindow(Dimensions.WIDTH, Dimensions.HEIGHT, this.TITLE, glfwGetPrimaryMonitor(), NULL);
+        this.window = glfwCreateWindow(Dimensions.WIDTH, Dimensions.HEIGHT, this.TITLE, NULL, NULL);
 
         if (this.window == NULL) {
             throw new RuntimeException("Unable to create window");
@@ -66,6 +66,9 @@ public class Main implements Runnable, Dimensions {
         Matrix4f pr_matrix = Matrix4f.orthographic(-10.0f, 10.0f, -10.0f * 9.0f / 16.0f, 10.0f * 9.0f / 16.0f, -1.0f, 1.0f);
         Shader.BG.setUniformMat4f("pr_matrix", pr_matrix);
         Shader.BG.setUniform1i("tex", 1);
+
+        Shader.BIRD.setUniformMat4f("pr_matrix", pr_matrix);
+        Shader.BIRD.setUniform1i("tex", 1);
 
         level = new Level();
     }

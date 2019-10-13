@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e74e03ac-edc5-4a13-b040-5231b21d7229" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/res/bg.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/bird.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/pipe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shaders/bg.frag" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shaders/bg.vert" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaders/bird.frag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaders/bird.vert" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Level/Bird.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/dr4kk0nnys/Flappy_Bird/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/dr4kk0nnys/Flappy_Bird/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/dr4kk0nnys/Flappy_Bird/Math/Vector3f.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Graphics/Shader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Graphics/Shader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Level/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Level/Level.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Utils/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Utils/FileUtils.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,23 +33,24 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/slick" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/shaders" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.dr4kk0nnys.Flappy_Bird.utils" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/libs" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/com/thecherno/flappy/textures" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/shaders" />
+      <recent name="$PROJECT_DIR$/libs" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.dr4kk0nnys.Flappy_Bird.utils" />
     </key>
   </component>
   <component name="RunDashboard">

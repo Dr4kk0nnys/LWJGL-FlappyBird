@@ -13,6 +13,8 @@ public class Level {
 
     private int xScroll = 0, map = 0;
 
+    private Bird bird;
+
     public Level() {
         float[] vertices = new float[] {
             -10f, -10f * 9f / 16f, 0f,
@@ -35,6 +37,8 @@ public class Level {
 
         background = new VertexArray(vertices, indices, tcs);
         bgTexture = new Texture("res/bg.jpeg");
+
+        bird = new Bird();
     }
 
     public void update() {
@@ -53,6 +57,9 @@ public class Level {
         background.render();
         Shader.BG.disable();
         bgTexture.unbind();
+
+        bird.render();
+        bird.update();
     }
 
 }
