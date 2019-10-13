@@ -14,7 +14,7 @@ public class Shader {
     public static final int VERTEX_ATTRIB = 0;
     public static final int TCOORD_ATTRIB = 1;
 
-    public static Shader BG, BIRD;
+    public static Shader BG, BIRD, PIPE;
 
     private boolean enabled = false;
 
@@ -28,6 +28,7 @@ public class Shader {
     public static void loadAll() {
         BG = new Shader("shaders/bg.vert", "shaders/bg.frag");
         BIRD = new Shader("shaders/bird.vert", "shaders/bird.frag");
+        PIPE = new Shader("shaders/pipe.vert", "shaders/pipe.frag");
     }
 
     public int getUniform(String name) {

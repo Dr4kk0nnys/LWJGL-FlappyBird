@@ -2,11 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e74e03ac-edc5-4a13-b040-5231b21d7229" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/shaders/bird.frag" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shaders/bird.vert" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Level/Bird.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaders/pipe.frag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaders/pipe.vert" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Level/Pipe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/dr4kk0nnys/Flappy_Bird/Graphics/Shader.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/dr4kk0nnys/Flappy_Bird/Graphics/Shader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/dr4kk0nnys/Flappy_Bird/Input/Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/dr4kk0nnys/Flappy_Bird/Input/Input.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/dr4kk0nnys/Flappy_Bird/Level/Bird.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/dr4kk0nnys/Flappy_Bird/Level/Bird.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/dr4kk0nnys/Flappy_Bird/Level/Level.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/dr4kk0nnys/Flappy_Bird/Level/Level.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/dr4kk0nnys/Flappy_Bird/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/dr4kk0nnys/Flappy_Bird/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shaders/bird.frag" beforeDir="false" afterPath="$PROJECT_DIR$/shaders/bird.frag" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Graphics/Shader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Graphics/Shader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Input/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Input/Input.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Level/Bird.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Level/Bird.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Level/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Level/Level.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Main.java" afterDir="false" />
     </list>
