@@ -2,21 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e74e03ac-edc5-4a13-b040-5231b21d7229" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Dimensions/Dimensions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Graphics/Shader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Graphics/Texture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Graphics/VertexArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Input/Input.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Level/Level.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Maths/Matrix4f.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Maths/Vector3f.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Utils/BufferUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Utils/FileUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Utils/ShaderUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/dr4kk0nnys.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/dr4kk0nnys.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/bg.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/bird.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/pipe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaders/bg.frag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaders/bg.vert" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/dr4kk0nnys/Flappy_Bird/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/dr4kk0nnys/Flappy_Bird/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/dr4kk0nnys/Flappy_Bird/Math/Vector3f.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Graphics/Shader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Graphics/Shader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Level/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Level/Level.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Utils/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dr4kk0nnys/Flappy_Bird/Utils/FileUtils.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +36,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/slick" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -130,5 +128,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

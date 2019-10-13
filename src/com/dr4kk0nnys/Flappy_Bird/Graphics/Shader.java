@@ -12,9 +12,11 @@ import static org.lwjgl.opengl.GL20.*;
 public class Shader {
 
     public static final int VERTEX_ATTRIB = 0;
-    public static final int TCOORD_ATTRIB = 0;
+    public static final int TCOORD_ATTRIB = 1;
 
     public static Shader BG;
+
+    private boolean enabled = false;
 
     private final int ID;
     private Map<String, Integer> locationCache = new HashMap<String, Integer>();
@@ -38,31 +40,38 @@ public class Shader {
     }
 
     public void setUniform1i(String name, int value) {
+        if(!this.enabled) enable();
         glUniform1i(getUniform(name), value);
     }
 
     public void setUniform1f(String name, float value) {
+        if(!this.enabled) enable();
         glUniform1f(getUniform(name), value);
     }
 
     public void setUniform2f(String name, float x, float y) {
+        if(!this.enabled) enable();
         glUniform2f(getUniform(name), x, y);
     }
 
     public void setUniform3f(String name, Vector3f vector) {
+        if(!this.enabled) enable();
         glUniform3f(getUniform(name), vector.x, vector.y, vector.z);
     }
 
     public void setUniformMat4f(String name, Matrix4f matrix) {
+        if(!this.enabled) enable();
         glUniformMatrix4fv(getUniform(name), false, matrix.toFloatBuffer());
     }
 
     public void enable() {
         glUseProgram(ID);
+        this.enabled = true;
     }
 
     public void disable() {
         glUseProgram(0);
+        this.enabled = false;
     }
 
 }

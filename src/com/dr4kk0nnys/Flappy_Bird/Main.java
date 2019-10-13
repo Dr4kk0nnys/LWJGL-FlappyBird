@@ -3,6 +3,7 @@ package com.dr4kk0nnys.Flappy_Bird;
 import com.dr4kk0nnys.Flappy_Bird.Dimensions.Dimensions;
 import com.dr4kk0nnys.Flappy_Bird.Graphics.Shader;
 import com.dr4kk0nnys.Flappy_Bird.Input.Input;
+import com.dr4kk0nnys.Flappy_Bird.Level.Level;
 import com.dr4kk0nnys.Flappy_Bird.Maths.Matrix4f;
 import org.lwjgl.glfw.GLFWErrorCallback;
 import org.lwjgl.opengl.GL;
@@ -10,13 +11,18 @@ import java.util.Objects;
 
 import static org.lwjgl.glfw.GLFW.*;
 import static org.lwjgl.opengl.GL11.*;
+import static org.lwjgl.opengl.GL13.*;
 import static org.lwjgl.system.MemoryUtil.*;
 
 public class Main implements Runnable, Dimensions {
 
+    private final String TITLE = "Flappy Bird";
+
     private boolean running = false;
 
     private long window;
+
+    private Level level;
 
     private void start() {
         this.running = true;
@@ -37,8 +43,7 @@ public class Main implements Runnable, Dimensions {
         glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
         glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-        String TITLE = "Flappy Bird";
-        this.window = glfwCreateWindow(Dimensions.WIDTH, Dimensions.HEIGHT, TITLE, glfwGetPrimaryMonitor(), NULL);
+        this.window = glfwCreateWindow(Dimensions.WIDTH, Dimensions.HEIGHT, this.TITLE, glfwGetPrimaryMonitor(), NULL);
 
         if (this.window == NULL) {
             throw new RuntimeException("Unable to create window");
@@ -53,21 +58,45 @@ public class Main implements Runnable, Dimensions {
 
         glClearColor(1f, 1f, 1f, 1f);
         glEnable(GL_DEPTH_TEST);
+        glActiveTexture(GL_TEXTURE1);
         System.out.println("Open GL Version: " + glGetString(GL_VERSION));
 
         Shader.loadAll();
 
-        Matrix4f pr_matrix = Matrix4f.orthographic(-16f, 16f, -9f, 9f, -1f, 1f);
-
+        Matrix4f pr_matrix = Matrix4f.orthographic(-10.0f, 10.0f, -10.0f * 9.0f / 16.0f, 10.0f * 9.0f / 16.0f, -1.0f, 1.0f);
         Shader.BG.setUniformMat4f("pr_matrix", pr_matrix);
+        Shader.BG.setUniform1i("tex", 1);
 
+        level = new Level();
     }
 
     public void run() {
         this.init();
+
+        long lastTime = System.nanoTime();
+        double delta = 0.0;
+        double ns = 1000000000.0 / 60.0;
+        long timer = System.currentTimeMillis();
+        int updates = 0;
+        int frames = 0;
+
         while (running) {
-            this.update();
+            long now = System.nanoTime();
+            delta += (now - lastTime) / ns;
+            lastTime = now;
+            if(delta >= 1.0) {
+                update();
+                updates++;
+                delta--;
+            }
             this.render();
+            frames++;
+            if(System.currentTimeMillis() - timer > 1000) {
+                timer += 1000;
+                glfwSetWindowTitle(this.window, this.TITLE + " | FPS: " + frames);
+                updates = 0;
+                frames = 0;
+            }
 
             if (glfwWindowShouldClose(this.window)) running = false;
         }
@@ -79,6 +108,7 @@ public class Main implements Runnable, Dimensions {
 
     private void update() {
         glfwPollEvents();
+        level.update();
         if (Input.keys[GLFW_KEY_SPACE]) {
             System.out.println("Yaks");
         } else if (Input.keys[GLFW_KEY_ESCAPE]) {
@@ -87,7 +117,12 @@ public class Main implements Runnable, Dimensions {
     }
 
     private void render() {
-        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_TEST);
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+        level.render();
+        int error = glGetError();
+        if (error != GL_NO_ERROR) {
+            System.out.println(error);
+        }
         glfwSwapBuffers(this.window);
     }
 

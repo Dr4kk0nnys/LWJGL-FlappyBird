@@ -1,7 +1,6 @@
 package com.dr4kk0nnys.Flappy_Bird.Utils;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -19,7 +18,7 @@ public class FileUtils {
 
             String buffer = "";
             while((buffer = reader.readLine()) != null) {
-                result.append(buffer);
+                result.append(buffer + "\n");
             }
             reader.close();
         } catch (IOException e) {
